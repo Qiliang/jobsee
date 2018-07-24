@@ -1,0 +1,7 @@
+pipeline:
+  build:
+    image: gradle:jdk8
+    commands:
+      - gradle bootJar
+
+branches: master
