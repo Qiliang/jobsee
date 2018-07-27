@@ -9,7 +9,7 @@ script:
   
 deploy:
   provider: releases
-  user: "xiaoqlster@gmail.com "
+  user: "xiaoqlster@gmail.com"
   password: "caohaofen057922"
   file: "rrrr.jar"
   skip_cleanup: true
