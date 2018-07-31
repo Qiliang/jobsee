@@ -4,4 +4,4 @@ pipeline:
     commands:
       - gradle bootJar
 
-branches: ["master","develop"]
+branches: ["master"]
