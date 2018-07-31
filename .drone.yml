@@ -2,6 +2,6 @@ pipeline:
   build:
     image: gradle:jdk8
     commands:
-      - gradle bootJar
+      - ls
 
 branches: ["master"]
