@@ -3,5 +3,5 @@ pipeline:
     image: openjdk:8
     commands:
       - chmod a+x gradlew  
-      - ./gradlew build   
+      - ./gradlew prdWrapper build
 branches: ["master","dev4"]
