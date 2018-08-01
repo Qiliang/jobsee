@@ -2,7 +2,7 @@ pipeline:
   build:
     image: gradle:jdk8
     commands:
-      - gradle tasks
+      - gradle --debug --scan
     volumes:
      - ${PWD}:/home/gradle
 branches: ["master","dev3"]
