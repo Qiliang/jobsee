@@ -2,5 +2,6 @@ pipeline:
   build:
     image: openjdk:8
     commands:
+      - chmod a+x gradlew  
       - ./gradlew build   
 branches: ["master","dev3"]
