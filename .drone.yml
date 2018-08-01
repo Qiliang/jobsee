@@ -4,4 +4,4 @@ pipeline:
     commands:
       - chmod a+x gradlew  
       - ./gradlew build   
-branches: ["master","dev3"]
+branches: ["master","dev4"]
