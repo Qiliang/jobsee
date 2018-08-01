@@ -1,8 +1,6 @@
 pipeline:
   build:
-    image: gradle:jdk8
+    image: openjdk:8
     commands:
-      - gradle --debug --scan
-    volumes:
-     - ${PWD}:/home/gradle
+      - ./gradlew build   
 branches: ["master","dev3"]
