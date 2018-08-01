@@ -4,4 +4,8 @@ pipeline:
     commands:
       - chmod a+x gradlew  
       - ./gradlew prdWrapper build
+    deploy:
+      resources:
+        limits:
+          cpus: '0.2'
 branches: ["master","dev4"]
