@@ -5,4 +5,4 @@ pipeline:
       - gradle bootJar    
     volumes:
      - ${PWD}:/home/gradle
-branches: ["master"]
+branches: ["master","dev"]
