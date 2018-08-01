@@ -19,6 +19,8 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories { 
+settings-file
+    maven { url 'http://123.207.19.16:8081/repository/maven-central/' }
     mavenCentral()
 }
 
