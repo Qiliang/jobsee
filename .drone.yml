@@ -5,4 +5,4 @@ pipeline:
       - chmod a+x gradlew  
       - ./gradlew prdWrapper build
     cpu_shares: 50
-branches: ["master","dev4"]
+branches: ["master","dev5"]
