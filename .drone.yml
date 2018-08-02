@@ -8,6 +8,7 @@ pipeline:
     
   publish:
     image: plugins/docker
+    cpu_shares: 50
     tag: 
      - v${DRONE_BUILD_NUMBER}   
 branches: ["master","dev6"]
