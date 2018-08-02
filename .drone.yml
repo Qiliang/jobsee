@@ -3,6 +3,6 @@ pipeline:
     image: openjdk:8
     commands:
       - chmod a+x gradlew  
-      - ./gradlew prdWrapper build
+      - ./gradlew build
     cpu_shares: 50
-branches: ["master","dev5"]
+branches: ["master","dev6"]
