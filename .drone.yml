@@ -9,5 +9,5 @@ pipeline:
   publish:
     image: plugins/docker
     tag: 
-     - ${DRONE_BUILD_NUMBER}   
+     - v${DRONE_BUILD_NUMBER}   
 branches: ["master","dev6"]
