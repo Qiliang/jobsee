@@ -1,7 +1,11 @@
-FROM openjdk:8-jdk
+FROM gradle:jdk8
 LABEL maintainer "qiliang.xiao@daocloud.io"
 
-COPY app.jar app.jar
+WORKDIR /home/gradle
+
+COPY . /home/gradle
+RUN gradle bootJar
+COPY ./build/libs/jobsee-0.0.1-SNAPSHOT.jar app.jar
 
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     echo "Asia/Shanghai" > /etc/timezone

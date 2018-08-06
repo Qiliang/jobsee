@@ -3,5 +3,13 @@ pipeline:
     image: openjdk:8
     commands:
       - chmod a+x gradlew  
-      - ./gradlew prdWrapper build
-branches: ["master","dev4"]
+      - ./gradlew build
+    cpu_shares: 50
+    
+  publish:
+    image: plugins/docker
+    cpu_shares: 50
+    repo: jobsee
+    tag: 
+     - v${DRONE_BUILD_NUMBER}   
+branches: ["master","dev6"]
